@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(./assets/fonts/roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+@import "variables.scss";
+@import "text.scss";
+@import "field.scss";
+@import "photo-board.scss";

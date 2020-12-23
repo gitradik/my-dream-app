@@ -1,0 +1,26 @@
+.form-field {
+  .form-field-txt {
+    p { font-size: 10px; }
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+  display: flex;
+  flex-direction: column;
+}
+::ng-deep {
+  input {
+    height: 16px;
+    border: 1px solid rgba(127, 127, 127);
+    border-radius: 4px;
+    padding: 4px;
+    &:focus {
+      border-color:rgb(34, 33, 33);
+    }
+  }
+  select {
+    height: 26px;
+    border: 1px solid rgba(127, 127, 127);
+    border-radius: 0;
+    background-color: transparent;
+  }
+}

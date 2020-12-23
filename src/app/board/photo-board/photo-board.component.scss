@@ -1,0 +1,32 @@
+.photo-board {
+  padding-top: 14px;
+}
+.photo-board-action {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+
+  app-button {
+    margin-left: 30px;
+  }
+  app-form-field {
+    max-width: 322px;
+  }
+
+  &.left {
+    justify-content: flex-start;
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+}
+.photo-board-photos {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  div {
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+}
