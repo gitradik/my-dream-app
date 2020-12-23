@@ -1,0 +1,28 @@
+.board {
+  padding: 60px 30px 30px;
+  max-width: 1105px;
+  margin: 0 auto;
+  position: relative;
+
+  .board-title {
+    font-size: 20px;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  .board-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    width: 50%;
+  }
+
+  app-form-field {
+    max-width: 121px;
+    margin-right: 35px;
+  }
+}

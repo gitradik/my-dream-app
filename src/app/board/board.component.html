@@ -1,0 +1,23 @@
+<div class="board">
+  <div class="board-title">
+    <p>{{ title }}</p>
+    <hr>
+  </div>
+  <router-outlet></router-outlet>
+  <div class="board-actions">
+    <app-form-field
+      text="Selectan existing board"
+    >
+      <select (change)="navigateByKey($event.target.value)">
+        <ng-template ngFor let-key [ngForOf]="getBoardsKeys()" [ngForTrackBy]="trackByFn">
+          <option [value]="key">{{ key }}{{ boards.get(key).isPhoto() ? ' •' : '' }}</option>
+        </ng-template>
+      </select>
+    </app-form-field>
+    <app-button 
+      text="Create a new board" 
+      [theme]="btnTheme.light"
+      (onClick)="createBoard()"
+    ></app-button>
+  </div>
+</div>
