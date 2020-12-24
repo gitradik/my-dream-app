@@ -11,31 +11,13 @@
       (onClick)="addBoardPhoto()"
     ></app-button>
   </div>
+
   <div *ngIf="board" class="photo-board-photos">
-    <!-- <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/max2019/stock-swncd-pod1-us-568x300.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/max2019/stock-swncd-pod1-us-568x300.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow3-720x522.png.img.png" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow3-720x522.png.img.png" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/max2019/stock-swncd-pod1-us-568x300.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/max2019/stock-swncd-pod1-us-568x300.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow3-720x522.png.img.png" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div>
-    <div><img class="board-photo" src="https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg" alt=""></div> -->
     <ng-template ngFor let-photo [ngForOf]="getBoardPhotos() | async" [ngForTrackBy]="trackByFn">
-      <div [innerHTML]="photo.getImg()"></div>
+      <div class="board-photo-container" [innerHTML]="photo.getImg()"></div>
     </ng-template>
   </div>
+
   <div *ngIf="board" class="photo-board-action right">
     <app-button
       text="Dismiss Changes" 
