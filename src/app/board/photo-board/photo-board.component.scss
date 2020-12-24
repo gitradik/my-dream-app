@@ -24,9 +24,12 @@
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -7px 0 -7px;
 
-  div {
-    padding-right: 15px;
-    padding-bottom: 20px;
+  .board-photo-container {
+    height: 85px;
+    margin-bottom: 25px;
+    margin-left: 7px;
+    margin-right: 7px;
   }
 }

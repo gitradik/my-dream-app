@@ -22,14 +22,14 @@ export class BoardPhoto {
   }
 
   getImg(): string {
-    return `<img class="board-photo" src="${this.src}"/>${this.getTags()}`
+    return `<img class="board-photo" src="${this.src}"/>${this.getStrTags()}`
   }
 
   addTag(tag: string): void {
     this.tags.push(tag);
   }
 
-  private getTags(): string {
+  private getStrTags(): string {
     return this.tags.join();
   }
 }
